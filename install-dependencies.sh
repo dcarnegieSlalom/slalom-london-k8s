@@ -37,7 +37,7 @@ echo ''
 # install terraform
 echo -e "${GREEN}==== INSTALLING TERRAFORM ====${NC}"
 apt-get install unzip
-curl -L0 https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip
+curl -LO https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip
 unzip terraform_0.11.2_linux_amd64.zip -d ./
 chmod +x terraform
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED TERRAFORM ====${NC}"
