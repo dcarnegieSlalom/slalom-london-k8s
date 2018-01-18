@@ -1,0 +1,1 @@
+echo '===Fake build. Sad!==='
