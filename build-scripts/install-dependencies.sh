@@ -12,7 +12,7 @@ echo ''
 # install kops
 echo -e "${GREEN}==== INSTALLING KOPS ====${NC}"
 curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
-chmod +x kops-linux-amd64
+chmod +x ./kops-linux-amd64
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED KOPS ====${NC}"
 echo ''
 
@@ -20,7 +20,7 @@ echo ''
 echo -e "${GREEN}==== INSTALLING AWS ====${NC}"
 pip install --user awscli
 export PATH=$PATH:$HOME/.local/bin
-chmod +x aws
+chmod +x ./aws
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED AWS ====${NC}"
 echo ''
 
@@ -29,7 +29,7 @@ echo -e "${GREEN}==== INSTALLING KUBEDIFF ====${NC}"
 git clone https://github.com/weaveworks/kubediff
 cd kubediff
 sudo pip install -r requirements.txt
-chmod +x kubediff
+chmod +x ./kubediff
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED KUBEDIFF ====${NC}"
 echo ''
 
@@ -38,7 +38,7 @@ echo -e "${GREEN}==== INSTALLING TERRAFORM ====${NC}"
 apt-get install unzip
 curl -LO https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip
 unzip terraform_0.11.2_linux_amd64.zip -d ./
-chmod +x terraform
+chmod +x ./terraform
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED TERRAFORM ====${NC}"
 echo ''
 
