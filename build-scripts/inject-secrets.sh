@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 mkdir ~/.kube
 mv ./build-scripts/kubeconfig ~/.kube/config
 
