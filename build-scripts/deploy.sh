@@ -4,4 +4,4 @@ NC='\033[0;0m'
 
 pwd
 ls
-kubectl get pods
+./kubectl get pods
