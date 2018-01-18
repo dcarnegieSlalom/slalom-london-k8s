@@ -6,8 +6,8 @@ mv ./build-scripts/kubeconfig ~/.kube/config
 openssl aes-256-cbc -K $encrypted_e6568868d258_key -iv $encrypted_e6568868d258_iv -in ./build-scripts/large-secrets.txt.enc -out large-secrets.txt -d
 
 # run the script to get the secrets as environment variables
-source large-secrets.txt
-export $(cut -d= -f1 large-secrets.txt)
+source ./build-scripts/large-secrets.txt
+export $(cut -d= -f1 ./build-scripts/large-secrets.txt)
 echo "secret value: $CERTIFICATE_AUTHORITY_DATA"
 
 # Set kubernetes secrets
