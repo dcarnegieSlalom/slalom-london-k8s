@@ -2,7 +2,6 @@
 GREEN='\033[0;32m'
 NC='\033[0;0m'
 
-
 # install kubectl
 echo -e "${GREEN}==== INSTALLING KUBECTL ====${NC}"
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -43,10 +42,7 @@ chmod +x terraform
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED TERRAFORM ====${NC}"
 echo ''
 
-# Set kubernetes secrets
-#kubectl config set clusters.kubernetes-group-xxxxx.certificate-authority-data "$KUBE_CLUSTER_CERTIFICATE"
-#kubectl config set users.kubernetes-group-xxxxx-admin.client-certificate-data "$KUBE_CLIENT_CERTIFICATE"
-#kubectl config set users.kubernetes-group-xxxxx-admin.client-key-data "$KUBE_CLIENT_KEY"
 
-# set AWS secrets
+
+ 
 
