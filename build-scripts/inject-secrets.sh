@@ -8,7 +8,7 @@ openssl aes-256-cbc -K $encrypted_e6568868d258_key -iv $encrypted_e6568868d258_i
 # run the script to get the secrets as environment variables
 source ./large-secrets.txt
 export $(cut -d= -f1 ./large-secrets.txt)
-echo "secret value: $CERTIFICATE_AUTHORITY_DATA"
+
 
 # Set kubernetes secrets
 ./kubectl config set clusters.cluster.zigzag-london.com.certificate-authority-data "$CERTIFICATE_AUTHORITY_DATA"
