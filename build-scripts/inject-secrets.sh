@@ -26,10 +26,3 @@ touch ~/.aws/config
 echo '[default]' >> ~/.aws/config
 echo "output = json">> ~/.aws/config
 echo "region = eu-west-1" >> ~/.aws/config
-
-
-GREEN='\033[0;32m'
-NC='\033[0;0m'
-echo "${GREEN}=== test secret ===${NC}"
-echo "${DONALD_ENCRYPTION_TEST}"
-echo "${GREEN}=== test secret ===${NC}"
