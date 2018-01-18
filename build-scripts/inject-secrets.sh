@@ -6,7 +6,8 @@ mv ./build-scripts/kubeconfig ~/.kube/config
 openssl aes-256-cbc -K $encrypted_e6568868d258_key -iv $encrypted_e6568868d258_iv -in ./build-scripts/large-secrets.sh.enc -out large-secrets.sh -d
 # run the script to get the secrets as environment variables
 chmod +x ./large-secrets.sh
-sh ./large-secrets.sh 
+sh ./large-secrets.sh
+echo "secret value: $KUBE_CLUSTER_CERTIFICATE"
 
 # Set kubernetes secrets
 ./kubectl config set clusters.cluster.zigzag-london.com.certificate-authority-data "$KUBE_CLUSTER_CERTIFICATE"
