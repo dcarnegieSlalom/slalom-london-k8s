@@ -43,9 +43,4 @@ chmod +x ./terraform
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED TERRAFORM ====${NC}"
 echo ''
 
-echo "export PATH=$PATH:$(pwd)/kubediff"  >> ~/.bash_profile
-echo "export PATH=$PATH:$(pwd)"  >> ~/.bash_profile
-
-echo $PATH
- 
 

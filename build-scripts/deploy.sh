@@ -1,6 +1,8 @@
 #!/bin/bash
 GREEN='\033[0;32m'
 NC='\033[0;0m'
+export PATH=$PATH:$(pwd)/kubediff
+export PATH=$PATH:$(pwd)
 
 # Execute terraform init \ terraform plan \ terraform apply on iam role
 
