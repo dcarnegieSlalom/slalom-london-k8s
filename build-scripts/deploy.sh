@@ -9,7 +9,7 @@ NC='\033[0;0m'
 
 
 # Execute kubediff and work out what we need to redeploy to the cluster
-./kubediff ./k8s-gui
+sudo ./kubediff ./k8s-gui
 
 # Redeploy what we need to redeploy.
 
