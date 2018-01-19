@@ -11,10 +11,10 @@ NC='\033[0;0m'
 # Execute kubediff and work out what we need to redeploy to the cluster
 pwd 
 ls
-echo "${pwd}/k8s-gui/alb-ingress-k8s-gui.yaml"
-cat ${pwd}/k8s-gui/alb-ingress-k8s-gui.yaml
+echo "$(pwd)/k8s-gui/alb-ingress-k8s-gui.yaml"
+cat $(pwd)/k8s-gui/alb-ingress-k8s-gui.yaml
 
-python ./kubediff/kubediff ${pwd}/k8s-gui/alb-ingress-k8s-gui.yaml
+python ./kubediff/kubediff $(pwd)/k8s-gui/alb-ingress-k8s-gui.yaml
 
 # Redeploy what we need to redeploy.
 
