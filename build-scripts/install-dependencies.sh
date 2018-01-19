@@ -45,6 +45,6 @@ echo ''
 export PATH=$PATH:$(pwd)/kubediff
 export PATH=$PATH:$(pwd)
 
-
+echo $PATH
  
 
