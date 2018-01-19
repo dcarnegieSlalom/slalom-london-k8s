@@ -42,6 +42,7 @@ chmod +x ./terraform
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED TERRAFORM ====${NC}"
 echo ''
 
+export PATH = $PATH; pwd
 
 
  
