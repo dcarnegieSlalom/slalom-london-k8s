@@ -15,7 +15,7 @@ pwd
 ls
 echo $PATH
 
-python ./kubediff/kubediff $(pwd)/k8s-gui/alb-ingress-k8s-gui.yaml
+python ./kubediff/kubediff $(pwd)/k8s-gui/kubernetes-dashboard-nodeports.yaml
 
 # Redeploy what we need to redeploy.
 
