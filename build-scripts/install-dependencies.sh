@@ -32,6 +32,7 @@ sudo pip install -r requirements.txt
 chmod +x ./kubediff
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED KUBEDIFF ====${NC}"
 echo ''
+cd ..
 
 # install terraform
 echo -e "${GREEN}==== INSTALLING TERRAFORM ====${NC}"
@@ -44,9 +45,6 @@ echo ''
 
 echo "export PATH=$PATH:$(pwd)/kubediff"  >> ~/.bash_profile
 echo "export PATH=$PATH:$(pwd)"  >> ~/.bash_profile
-
-export PATH=$PATH:$(pwd)/kubediff
-export PATH=$PATH:$(pwd)
 
 echo $PATH
  
