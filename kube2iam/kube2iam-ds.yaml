@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: kube2iam
+  namespace: kube-system
   labels:
     app: kube2iam
 spec:
@@ -10,6 +11,7 @@ spec:
       labels:
         name: kube2iam
     spec:
+      serviceAccountName: kube2iam
       hostNetwork: true
       containers:
         - image: jtblin/kube2iam:latest

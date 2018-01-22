@@ -8,7 +8,6 @@ metadata:
     app: alb-ingress-controller
   name: alb-ingress-controller
   annotations:
-    iam.amazonaws.com/role: arn:aws:iam::143599268911:role/MyPodRole
   # Namespace the ALB Ingress Controller should run in. Does not impact which
   # namespaces it's able to resolve ingress resource for. For limiting ingress
   # namespace scope, see --watch-namespace.
@@ -26,11 +25,12 @@ spec:
   template:
     metadata:
       annotations:
-        iam.amazonaws.com/role: arn:aws:iam::143599268911:role/MyPodRole
+        iam.amazonaws.com/role: arn:aws:iam::143599268911:role/ingress_pod_role
       creationTimestamp: null
       labels:
         app: alb-ingress-controller
     spec:
+      serviceAccountName: ingress-alb
       containers:
       - args:
         - /server
