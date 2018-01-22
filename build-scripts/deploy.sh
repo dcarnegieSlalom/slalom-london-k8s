@@ -40,7 +40,7 @@ echo ''
 # Execute kubectl apply on test application
 echo -e "${GREEN}==== Deploying test app ====${NC}"
 cd hello_app
-kubectl apply -f hello_app_deployment.yaml
+kubectl apply -f hello_app_deployment.yaml --validate=false
 kubectl apply -f hello_app_ingress_resource.yaml
 echo -e "${GREEN}==== Done deploying test app ====${NC}"
 echo ''
