@@ -1,6 +1,6 @@
 provider "aws" {
   region      = "eu-west-1"
-  profile     = "slalom"
+  profile     = "default"
 }
 
 terraform {
@@ -8,6 +8,6 @@ terraform {
     bucket = "slalom-k8s-terraform"
     key    = "ingress/terraform.tfstate"
     region = "eu-west-1"
-    profile = "slalom"
+    profile = "default"
   }
 }
