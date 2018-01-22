@@ -21,7 +21,7 @@ terraform plan
 terraform apply
 kubectl apply -f alb-ingress-controller.yaml
 kubectl apply -f ingress-service-account-role-binding.yaml
-cd.. 
+cd .. 
 echo -e "${GREEN}==== Done deploying ingress ====${NC}"
 echo ''
 
