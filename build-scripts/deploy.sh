@@ -43,8 +43,3 @@ kubectl apply -f hello_app_deployment.yaml --validate=false
 kubectl apply -f hello_app_ingress_resource.yaml
 echo -e "${GREEN}==== Done deploying test app ====${NC}"
 echo ''
-
-
-
-
-
