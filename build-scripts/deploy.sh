@@ -31,7 +31,6 @@ cd external-dns
 terraform init
 terraform plan
 terraform apply
-kubectl apply -f external_dns_test.yaml
 kubectl apply -f external_dns.yaml
 kubectl apply -f external-dns-service-account-role-binding.yaml
 cd ..
