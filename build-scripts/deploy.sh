@@ -1,7 +1,6 @@
 #!/bin/bash
 GREEN='\033[0;32m'
 NC='\033[0;0m'
-export PATH=$PATH:$(pwd)/kubediff
 export PATH=$PATH:$(pwd)
 
 # Execut kubectl apply on iam role
@@ -44,5 +43,8 @@ kubectl apply -f hello_app_deployment.yaml --validate=false
 kubectl apply -f hello_app_ingress_resource.yaml
 echo -e "${GREEN}==== Done deploying test app ====${NC}"
 echo ''
+
+
+
 
 
