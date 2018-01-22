@@ -1,7 +1,6 @@
 #!/bin/bash
 GREEN='\033[0;32m'
 NC='\033[0;0m'
-export PATH=$PATH:$(pwd)/kubediff
 export PATH=$PATH:$(pwd)
 
 # Execut kubectl apply on iam role
