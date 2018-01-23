@@ -25,15 +25,6 @@ chmod +x ./aws
 echo -e "${GREEN}==== SUCCESSFULLY INSTALLED AWS ====${NC}"
 echo ''
 
-# install kubediff
-#echo -e "${GREEN}==== INSTALLING KUBEDIFF ====${NC}"
-#git clone https://github.com/weaveworks/kubediff
-#cd kubediff
-#sudo pip install -r requirements.txt
-#chmod +x ./kubediff
-#echo -e "${GREEN}==== SUCCESSFULLY INSTALLED KUBEDIFF ====${NC}"
-#echo ''
-#cd ..
 
 # install terraform
 echo -e "${GREEN}==== INSTALLING TERRAFORM ====${NC}"
